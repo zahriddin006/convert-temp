@@ -1,0 +1,11 @@
+body {
+  background-color: darkturquoise !important;
+}
+
+input , select{
+  outline: none;
+  background-color: lightcyan;
+  color: #111;
+  font-weight: 600;
+  opacity: 1;
+}

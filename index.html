@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert Temprature</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- bootstrap file css -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  
+  <div class="temp_calculator d-flex justify-content-center align-items-center flex-column">
+    <h4 class="title text-center pt-3 fs-2 text-white fw-bold">
+      Convert Temprature
+    </h4>
+    <form class="d-flex justify-content-center align-items-start flex-column" action="#" method="post" name="form">
+      <div class="box mb-2">
+        <label class="fs-5 fw-bolder" for="input_value">
+          Value To Convert :
+        </label>
+        <input class="rounded-pill border-0 px-2 py-1"
+        type="number" name="value" id="input_value" placeholder="0">
+      </div>
+
+      <div class="box d-block mb-2">
+        <label class="fs-5 fw-bolder" for="input">from:</label>
+        <select class="rounded-pill p-1" name="input" id="input">
+          <option value="celsius">celsius</option>
+          <option value="fahrenheit">fahrenheit</option>
+          <option value="kelvin">kelvin</option>
+        </select>
+      </div>
+
+      <div class="box d-block mb-3">
+        <label class="fs-5 fw-bolder" for="output">To:</label>
+        <select class="rounded-pill p-1" name="output" id="output">
+          <option value="celsius">celsius</option>
+          <option value="fahrenheit" selected>fahrenheit</option>
+          <option value="kelvin">kelvin</option>
+        </select>
+      </div>
+      
+      <div class="buton-group">
+        <button class="px-2 py-1 border-0 rounded-2 btn-secondary ms-1 me-3" type="button" id="clear" onclick="reset()">
+          clear
+        </button>
+        <button class="px-2 py-1 border-0 rounded-2 btn-success mb-3" type="button" id="convert" onclick="convertTemprature()">
+        convert
+        </button>
+      </div>
+
+      <div class="result_area">
+        <label class="fs-5" for="#">Answer:</label>
+        <input type="text" id="result" disabled>
+      </div>
+
+    </form>
+  </div>
+
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
